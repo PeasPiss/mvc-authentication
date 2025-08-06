@@ -1,19 +1,79 @@
+/* Le corps */
 body {
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+/* ---------------------------------- */
+
+/* Bannière */
 #login {
-    background-color: #000;
+    background-color: #2d2a2b;
     border-radius: 20px;
     padding: 1%;    
     color: white;
     margin-left: 5%;
     margin-right: 5%;
     
-}   
+}  
+
+/* Banière : Longueur formulaire */
+#o-o {
+    width: 79%;
+}
+
+/* ---------------------------------- */
+
+/* Champs pour écrire */
+#utilisateur, #password, #email, #fonction {
+    width: 100%;
+}
+
+/* Champs pour écrire et Message d'erreur */
+#TwT {
+    display: flex;
+}
+
+/* Message d'erreur */
+/* #q-q {
+    width: 100%;
+    margin-left: 7%;
+} */
+
+/* ---------------------------------- */
+
+/* Titre */
 #title {
-    color: #FF1D8D!important;
+    color: #ee11ab!important;
+    font-size: 5rem;
+}
+
+/* ---------------------------------- */
+
+/* Créer un compte */
+#CUC {
+    color: #ee11ab!important;
+    border: none;
+}
+
+/* Créer un compte Hover */
+#CUC:hover {
+    background-color: #450833;
+}
+
+/* ---------------------------------- */
+
+/* Boutons */
+#V, #A {
+    background-color: #ee11ab;
+    color: white;
+}
+
+/* Boutons hover */
+#V:hover, #A:hover {
+    background-color: #a01476;
+    transition: 0.2s;
 }

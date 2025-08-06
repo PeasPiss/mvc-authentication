@@ -54,7 +54,7 @@ class LoginController extends Controller
     public function register()
     {
         $data = [];
-
+    error_log(print_r($_POST, true));
         // vérification de la présence d'informations concernant la connexion (requête "post")
         if (!empty($_POST))
         {

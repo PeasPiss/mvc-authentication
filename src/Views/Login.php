@@ -7,12 +7,21 @@
                     <div class="row justify-content-between align-items-center mb-3">
                         <div class="col-6"></div>
                         <div class="col-6 text-end">
-                            <a href="register" class="btn btn-outline-danger">Créer un compte</a>
+                            <a href="register" class="btn btn-outline-danger" id="CUC">Créer un compte</a>
                         </div>
                     </div>
                     <form action="login" method="post" id="loginForm">
                         <div class="row justify-content-center">
                             <div class="col-md-8">
+
+                                <!-- Utilisateur -->
+                                <div class="mb-3 row">
+                                    <label for="text" class="col-sm-4 col-form-label text-start">Utilisateur :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name="utilisateur" id="utilisateur" class="form-control">
+                                        <div class="invalid-feedback" id="utilisateurError">Veuillez entrer un nom d'utilisateur valide.</div>
+                                    </div>
+                                </div>
 
                                 <!-- Email -->
                                 <div class="mb-3 row">
@@ -35,8 +44,8 @@
                                 <!-- Boutons -->
                                 <div class="row">
                                     <div class="offset-sm-4 col-sm-8">
-                                        <button type="submit" class="btn btn-primary me-2">Valider</button>
-                                        <button type="reset" class="btn btn-outline-secondary">Annuler</button>
+                                        <button type="submit" class="btn btn-primary me-2" id="V">Valider</button>
+                                        <button type="reset" class="btn btn-outline-secondary" id="A">Annuler</button>
                                     </div>
                                 </div>
 
