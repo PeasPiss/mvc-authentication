@@ -5,11 +5,11 @@
             <div class="rounded-4">
                 <div class="card-body" id="login">
                     <div class="row justify-content-between align-items-center mb-3">
-                        <div class="col-6"></div>
                         <div class="col-6 text-end">
                             <a href="register" class="btn btn-outline-danger" id="CUC">Créer un compte</a>
                         </div>
                     </div>
+
                     <form action="login" method="post" id="loginForm">
                         <div class="row justify-content-center">
                             <div class="col-md-8">
@@ -44,11 +44,10 @@
                                 <!-- Boutons -->
                                 <div class="row">
                                     <div class="offset-sm-4 col-sm-8">
-                                        <button type="submit" class="btn btn-primary me-2" id="V">Valider</button>
+                                        <button type="submit" form="loginForm" class="btn btn-primary me-2" id="V">Valider</button>
                                         <button type="reset" class="btn btn-outline-secondary" id="A">Annuler</button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </form>
@@ -56,7 +55,7 @@
                 </div>
             </div>
         </div>
-    </div
+    </div>
     <?php
     if (isset($error_message)) {
     ?>

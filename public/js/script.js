@@ -26,9 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validation au moment de soumettre
     form.addEventListener("submit", function (e) {
         let validUtilisateur = validateField(utilisateur, utilisateurError, "Le nom d'utilisateur");
-        let validEmail = validateField(email, emailError, "L'email");
 
-        if (!validUtilisateur || !validEmail) {
+        // TODO a réactiver lorsqu'il y'aura la REGEX de validation d'email
+        // let validEmail = validateField(email, emailError, "L'email");
+
+        if (!validUtilisateur /*|| !validEmail*/) {
             e.preventDefault();
         }
     });
