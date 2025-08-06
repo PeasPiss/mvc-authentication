@@ -62,17 +62,16 @@ class LoginController extends Controller
             $nom = $_POST['nom'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $fonction = $_POST['fonction'];
+            // TODO récupérer la "fonction" du $_POST
 
-            // hachage du mot de passe 
-            $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+            // TODO hachage du mot de passe (en BCRYPT, par exemple)
 
-            // instanciation d'un nouvel utilisateur
-            $utilisateur_a_inserer = new Utilisateur($nom, $email, $hashed_password, $fonction);
-
+            // TODO instanciation d'un nouvel utilisateur avant l'insertion en base de données
+            // il faudra ici faire un appel au constructeur
             
-            // appel à la classe DAO afin de sauvegarder l'utilisateur en base de données
-            $utilisateur_bdd = UtilisateurDAO::save($utilisateur_a_inserer);
+            //TODO appel à laméthode "save" de la classe UtilisateurDAO afin de sauvegarder l'utilisateur en base de données (méthode )
+            // il faut remplacer "null" par un appel au constructeur
+            $utilisateur_bdd = null;
 
             // cas de l'utilisateur null (problème lors de l'insertion)
             if (is_null($utilisateur_bdd)) {

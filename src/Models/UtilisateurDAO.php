@@ -98,32 +98,12 @@ class UtilisateurDAO {
         // Récupération de la connexion à la base de données
         $pdo = Database::connect();
         
-        // préparation de la requête "INSERT INTO"
-        // pour plus d'informations sur comment faire des "INSERT INTO" en php : https://phpdelusions.net/pdo_examples/insert
-        $sql = "INSERT INTO utilisateurs (email_user, login_user, pwd_user, fonction) VALUES (?,?,?,?)";
-        $stmt= $pdo->prepare($sql);
+        // TODO préparation de la requête "INSERT INTO"
+        // pour plus d'informations sur comment faire des "INSERT INTO" en php
+        // https://phpdelusions.net/pdo_examples/insert
 
-        // association des ? avec les données
-        $data = [
-            $utilisateur->getEmail(),
-            $utilisateur->getNom(),
-            $utilisateur->getPassword(), 
-            $utilisateur->getFonction()
-        ];
-        
-        $resultat = $stmt->execute($data);
-
-        // déconnexion de la base de données
-        Database::disconnect();
-
-        // si la fonction s'est bien effectuée
-        if ($resultat) {
-            $new_id = $pdo->lastInsertId();
-            $utilisateur->setId($new_id);
-            return $utilisateur;
-        } else {
-            return null;
-        }
+        // TODO on retourne null si un problème a été rencontré, l'utilisateur 
+        return null;
     }
 
 
